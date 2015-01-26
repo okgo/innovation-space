@@ -1,0 +1,1869 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* See http://mrdanadams.com/2012/pixel-ems-css-conversion-sass-mixin/ */
+/* Default font size in pixels if not overridden. */
+/* Convert PX units to EMs.
+Ex: margin-right: pem(16);
+*/
+/* Used to convert PX to EMs for multiple properties or values or both.
+$base is an optional measurement that allows making measurements relative to the parent font size rather than the current. Also accepts a list of lists (instead a list of values) for properties that accept multiple lists of values. Only numbers of converted; everything else is passed through.
+
+Examples:
+
+@include scale(line-height, 30)
+@include scale(line-height, 30, 16)
+@include scale(width height, 125);
+@include scale(padding, 0 25, 16);
+@include scale(text-shadow, (#0d6e28 1 1) (#777 0 0 2), 16);
+@include scale(box-shadow, (inset 0 0 0 1 #2a9022) (inset 0 0 3 #459966), 16);
+*/
+/* line 3, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ui-container {
+  padding: 40px; }
+
+/* line 5, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ui-line {
+  margin: 20px 0 0 20px;
+  padding: 10px;
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #616582), color-stop(1, #4B9AAC));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to right, #616582 0%, #4b9aac 100%); }
+
+/* line 23, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+p {
+  margin: 0; }
+
+/* line 25, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+ul, ol {
+  margin: 0;
+  padding: 0; }
+  /* line 28, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  ul li, ol li {
+    list-style-type: none;
+    list-style: none; }
+
+/* line 31, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+menu {
+  margin: 0;
+  padding: 0; }
+
+/* line 34, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  letter-spacing: normal;
+  line-height: auto;
+  color: #121212;
+  font-weight: 400;
+  background-color: #fff;
+  position: relative; }
+
+/* line 45, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.container {
+  *zoom: 1;
+  max-width: 950px;
+  max-width: 59.375rem;
+  _width: 950px;
+  padding-left: 5px;
+  padding-left: 0.3125rem;
+  padding-right: 5px;
+  padding-right: 0.3125rem;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 38, /Users/admin/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 48, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  *zoom: 1; }
+
+/* line 56, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400; }
+
+/* line 61, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h1 {
+  font-size: 5.71429em;
+  font-weight: 300; }
+
+/* line 66, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h2 {
+  font-size: 1.78571em;
+  font-weight: 300;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1em;
+  color: #a6a6a6;
+  text-transform: uppercase; }
+
+/* line 74, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h3 {
+  font-size: 1.78571em;
+  font-weight: 300;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1em;
+  color: #fff;
+  text-transform: uppercase; }
+
+/* line 82, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h4 {
+  font-size: 1.14286em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  line-height: 1.85714em;
+  font-weight: 700; }
+
+/* line 88, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+h5 {
+  font-size: 1em;
+  line-height: 3.71429em;
+  color: #fff;
+  font-weight: 700;
+  opacity: 0.4;
+  text-transform: uppercase; }
+
+/* line 97, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+a {
+  color: #46a7b6;
+  font-style: italic;
+  text-decoration: underline; }
+  /* line 101, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  a:hover {
+    text-decoration: none; }
+
+/* line 104, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.stn-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 16.42857em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 4em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #e20932;
+  background: #fff;
+  border-radius: 1px solid #e20932;
+  color: #e20932;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  line-height: 4em;
+  border-radius: 3px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  /* line 122, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  .stn-btn:hover {
+    background: #e20932;
+    color: #fff; }
+    /* line 126, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    .stn-btn:hover.with-ico:before {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -1.85714em; }
+    /* line 128, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    .stn-btn:hover.send-request {
+      background: rgba(226, 9, 50, 0.7); }
+      /* line 130, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+      .stn-btn:hover.send-request:before {
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        background-position: 0em -1.71429em; }
+  /* line 133, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  .stn-btn.with-ico {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 2.5em; }
+    /* line 135, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    .stn-btn.with-ico:before {
+      content: "";
+      display: block;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 2.5em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      height: 1.85714em;
+      position: absolute;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      left: 2.5em;
+      top: 50%;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-top: -1.21429em;
+      background: url("../images/btn-ico.png") no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+      transition-duration: 0.5s; }
+  /* line 149, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  .stn-btn.send-request {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 18.64286em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 3.28571em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 2.85714em;
+    background: rgba(255, 255, 255, 0.7);
+    line-height: 3.28571em;
+    border: none; }
+    /* line 156, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    .stn-btn.send-request:before {
+      content: "";
+      display: block;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 1.85714em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      height: 1.71429em;
+      position: absolute;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      left: 2.85714em;
+      top: 50%;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-top: -0.85714em;
+      background: url("../images/send-btn-ico.png") no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+      transition-duration: 0.5s; }
+
+/* line 173, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.form-ok input[type='text'], .form-ok input[type='tel'], .form-ok input[type='email'], .form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'] {
+  background-image: url("../images/form-validation-ico.png");
+  background-position: right 20px top;
+  background-repeat: no-repeat; }
+
+/* line 181, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'] {
+  background-position: right 20px top -46px; }
+
+/* line 184, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+input[type='text'], input[type='tel'], input[type='email'] {
+  position: relative;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 25em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 3.28571em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 3px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0em 2.5em 0em 1.42857em;
+  color: #fff;
+  font-weight: 400;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  /* line 197, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  input[type='text']:focus, input[type='tel']:focus, input[type='email']:focus {
+    background-color: rgba(0, 0, 0, 0.4); }
+  /* line 198, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  input[type='text'].phone, input[type='tel'].phone, input[type='email'].phone {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 14.28571em; }
+  /* line 199, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  input[type='text'].long, input[type='tel'].long, input[type='email'].long {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 30.71429em; }
+
+/* line 202, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+textarea {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 30.71429em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 11.21429em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 3px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 1em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0.71429em 2.5em 0.71429em 1.42857em;
+  color: #fff;
+  font-weight: 400;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: none; }
+  /* line 215, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  textarea:focus {
+    background-color: rgba(0, 0, 0, 0.4); }
+  /* line 216, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  textarea.address {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 6.64286em; }
+
+/* line 219, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: #fff;
+  line-height: 1.57143em; }
+  /* line 223, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  label.uploader-label {
+    position: relative;
+    font-style: italic;
+    color: #fff;
+    text-decoration: underline;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 1.85714em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 7.85714em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-top: 4.07143em; }
+    /* line 231, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    label.uploader-label:hover {
+      cursor: pointer;
+      text-decoration: none; }
+    /* line 232, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+    label.uploader-label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: block;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 5.92857em;
+      height: 5.92857em;
+      background: url("../images/uploader-ico.png") no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover; }
+
+/* line 245, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+::-webkit-input-placeholder {
+  font-style: italic;
+  color: #fff;
+  opacity: 0.5; }
+
+/* line 251, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+:-moz-placeholder {
+  font-style: italic;
+  color: #fff;
+  opacity: 0.5; }
+
+/* Firefox 18- */
+/* line 257, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+::-moz-placeholder {
+  font-style: italic;
+  color: #fff;
+  opacity: 0.5; }
+
+/* Firefox 19+ */
+/* line 263, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+:-ms-input-placeholder {
+  font-style: italic;
+  color: #fff;
+  opacity: 0.5; }
+
+/* line 270, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ez-hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 1.5em;
+  height: 1.5em; }
+  /* line 274, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  .ez-hide:hover {
+    cursor: pointer; }
+
+/* line 276, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ez-checkbox, .ez-radio {
+  background: url("../images/ez-mark.png") transparent 0 0 no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 1.5em;
+  height: 1.5em;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  /* line 281, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+  .ez-checkbox:hover, .ez-radio:hover {
+    cursor: pointer; }
+
+/* line 284, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ez-checked {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  background-position: 0em -1.5em; }
+
+/* line 285, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
+.ez-selected {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  background-position: 0em -1.5em; }
+
+/* line 1, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_base.scss */
+.wrap {
+  width: 94%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1820px; }
+
+/* line 1, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+footer.main-footer {
+  position: relative;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 10.35714em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding-top: 2.14286em;
+  width: 100%;
+  min-width: 320px;
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(left, #18223B 0%, #274A55 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #18223B 0%, #274A55 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #18223B 0%, #274A55 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #18223B), color-stop(1, #274A55));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #18223B 0%, #274A55 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to right, #18223b 0%, #274a55 100%); }
+
+/* line 21, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+.footer-container {
+  width: 94%;
+  margin: 0 auto; }
+
+/* line 26, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+.contacts-block {
+  color: #fff;
+  float: left;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 1.07143em;
+  text-align: left; }
+  /* line 31, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+  .contacts-block ul {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 1.07143em; }
+
+/* line 34, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+.footer-menu {
+  float: right;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 5.35714em;
+  position: relative;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 1.07143em; }
+  /* line 39, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+  .footer-menu li {
+    float: left; }
+    /* line 41, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+    .footer-menu li a {
+      position: relative;
+      display: block;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-style: normal;
+      text-decoration: none;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      padding: 0em 1.07143em;
+      -moz-transition: all, 0.5s;
+      -o-transition: all, 0.5s;
+      -webkit-transition: all, 0.5s;
+      transition: all, 0.5s; }
+      /* line 51, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+      .footer-menu li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        top: 0.35714em;
+        right: -1px;
+        width: 2px;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 0.71429em;
+        background: #a6a6a6; }
+      /* line 61, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+      .footer-menu li a:hover {
+        color: #a6a6a6; }
+      /* line 62, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+      .footer-menu li a.facebook {
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        width: 1.42857em;
+        height: 1.42857em;
+        background: url("../images/facebook-f-ico.png") 0 0 no-repeat;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
+        padding: 0;
+        margin-left: 15px; }
+        /* line 68, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+        .footer-menu li a.facebook:before {
+          display: none; }
+        /* line 69, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+        .footer-menu li a.facebook:hover {
+          /* unwrap lists for values that have multiple list of values such as text-shadow */
+          /* unwrap lists for values that have multiple list of values such as text-shadow */
+          background-position: 0em -1.42857em; }
+      /* line 71, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+      .footer-menu li a.active {
+        color: #a6a6a6; }
+
+/* line 76, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+.webmil {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 4.07143em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 1.14286em;
+  background: url("../images/webmil.png") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+/* line 87, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+.footer-logo {
+  position: absolute;
+  color: #fff;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 17.14286em;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-left: -8.57143em;
+  left: 50%;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  top: 2.14286em;
+  text-align: center;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding-top: 2.85714em; }
+  /* line 96, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_footer.scss */
+  .footer-logo:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-left: -2.07143em;
+    top: 0;
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 4.14286em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 1.92857em;
+    background: url("../images/footer-logo.png") top center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+
+/* line 1, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+header.main-header {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding-top: 3.21429em; }
+  /* line 3, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+  header.main-header .logo-block {
+    float: left; }
+  /* line 4, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+  header.main-header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 4.14286em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 1.92857em;
+    background: url("../images/logo.png") no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; }
+  /* line 12, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+  header.main-header .logo-text {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 32.14286em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-left: 0.14286em; }
+    /* line 17, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+    header.main-header .logo-text p {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      background: #46a7b6;
+      color: #fff;
+      font-size: 1.14286em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      line-height: 1.6875em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      padding: 0em 1.25em;
+      font-weight: 300; }
+      /* line 25, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+      header.main-header .logo-text p:first-child {
+        margin-bottom: 1px; }
+
+/* line 31, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+.main-menu {
+  float: right; }
+  /* line 33, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+  .main-menu li {
+    float: left; }
+  /* line 34, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+  .main-menu a {
+    position: relative;
+    display: block;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0em 1.07143em;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: normal;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 1.42857em;
+    text-transform: uppercase;
+    -moz-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    -webkit-transition: all, 0.5s;
+    transition: all, 0.5s; }
+    /* line 45, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+    .main-menu a:before {
+      content: "";
+      display: block;
+      position: absolute;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      top: 0.35714em;
+      right: -1px;
+      width: 2px;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      height: 0.71429em;
+      background: #a6a6a6; }
+    /* line 55, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+    .main-menu a:hover {
+      color: #a6a6a6; }
+    /* line 56, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+    .main-menu a.facebook {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 1.42857em;
+      height: 1.42857em;
+      background: url("../images/facebook-ico.png") 0 0 no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover;
+      padding: 0;
+      margin-left: 15px; }
+      /* line 62, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+      .main-menu a.facebook:before {
+        display: none; }
+      /* line 63, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_header.scss */
+      .main-menu a.facebook:hover {
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        background-position: 0em -1.42857em; }
+
+/* line 1, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.slide {
+  position: relative;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 3.92857em 0em; }
+  /* line 4, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .slide h2, .slide h3 {
+    position: absolute;
+    left: 4%; }
+
+/* line 10, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.goal {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  padding: 0em 0em 3.57143em 0em;
+  text-align: center; }
+  /* line 13, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .goal .image-block {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-align: center;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 5em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 44.07143em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 36.78571em;
+    background: url("../images/slide1-768.jpg") center center no-repeat;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain; }
+  /* line 22, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .goal h2 {
+    position: static; }
+  /* line 23, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .goal .info {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 27.85714em;
+    margin-left: 4%; }
+    /* line 26, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .goal .info p {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-top: 1.21429em;
+      line-height: 1.85714em;
+      font-weight: 300; }
+  /* line 32, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .goal .text-block {
+    position: relative;
+    text-align: left; }
+    /* line 35, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .goal .text-block .stn-btn {
+      position: absolute;
+      left: 50%;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      top: 3.57143em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-left: -8.21429em; }
+  /* line 42, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .goal .download {
+    position: absolute;
+    right: 0;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    top: 4.85714em; }
+    /* line 46, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .goal .download a {
+      color: #e20932;
+      text-transform: uppercase;
+      line-height: 1.57143em;
+      font-weight: 700;
+      font-style: normal;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      padding-left: 2.5em;
+      text-decoration: none; }
+      /* line 54, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .goal .download a:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        width: 1.78571em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 1.57143em;
+        background: url("../images/download-ico.png") no-repeat;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover; }
+      /* line 65, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .goal .download a:hover {
+        text-decoration: underline; }
+
+/* line 70, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.timing {
+  text-align: center;
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #616582), color-stop(1, #4B9AAC));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to right, #616582 0%, #4b9aac 100%); }
+  /* line 84, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .timing .timing-list {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-align: left; }
+    /* line 87, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list ul {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-top: -0.85714em; }
+    /* line 88, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .item-name, .timing .timing-list .ico, .timing .timing-list .date {
+      float: left; }
+    /* line 89, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .item-name {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 22.85714em;
+      color: #fff;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      line-height: 3.71429em; }
+    /* line 94, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .ico {
+      position: relative;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 2.21429em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      height: 2.21429em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin: 0.71429em 1.42857em;
+      background: url("../images/timing-ico.png") no-repeat;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      -webkit-background-size: cover;
+      background-size: cover; }
+      /* line 101, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .timing .timing-list .ico:before {
+        content: '';
+        display: block;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        width: 0.07143em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 1.5em;
+        position: absolute;
+        left: 50%;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        margin-left: -0.07143em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        top: -1.5em;
+        background: rgba(255, 255, 255, 0.25); }
+    /* line 114, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .first .ico {
+      background-position: 0 0; }
+      /* line 116, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .timing .timing-list .first .ico:before {
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 4.64286em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        top: -4.64286em; }
+    /* line 123, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .second .ico {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -2.21429em; }
+    /* line 126, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .third .ico {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -4.42857em; }
+    /* line 129, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .fourth .ico {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -6.64286em; }
+    /* line 132, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .fifth .ico {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      background-position: 0em -8.85714em; }
+      /* line 134, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .timing .timing-list .fifth .ico:after {
+        content: '';
+        display: block;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        width: 0.07143em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 4.64286em;
+        position: absolute;
+        left: 50%;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        margin-left: -0.07143em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        bottom: -4.64286em;
+        background: rgba(255, 255, 255, 0.25); }
+    /* line 147, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .date {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 10.66667em;
+      font-size: 2.14286em;
+      font-weight: 800;
+      color: #fff;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      line-height: 1.73333em; }
+      /* line 153, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .timing .timing-list .date span {
+        font-weight: 400; }
+    /* line 156, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .timing .timing-list .done .item-name {
+      color: rgba(255, 255, 255, 0.5);
+      position: relative; }
+      /* line 159, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .timing .timing-list .done .item-name:before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 50%;
+        margin-top: -5px;
+        display: block;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        width: 0.92857em;
+        /* unwrap lists for values that have multiple list of values such as text-shadow */
+        height: 0.71429em;
+        background: url("../images/done-ico.png") no-repeat;
+        opacity: 1;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover; }
+
+/* line 177, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.task, .requirements {
+  text-align: center; }
+  /* line 179, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .task .info, .requirements .info {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-align: left; }
+  /* line 183, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .task .col1, .task .col2, .requirements .col1, .requirements .col2 {
+    float: left;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 30.71429em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    /* line 187, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .task .col1 p, .task .col2 p, .requirements .col1 p, .requirements .col2 p {
+      font-weight: 300;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      line-height: 1.85714em; }
+  /* line 192, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .task .col1, .requirements .col1 {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-right: 5.07143em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-left: 7.85714em; }
+
+/* line 198, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.location {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  height: 25.92857em;
+  width: 100%;
+  background: url("../images/location.jpg") center center;
+  -moz-background-size: 1820px 363px;
+  -o-background-size: 1820px 363px;
+  -webkit-background-size: 1820px 363px;
+  background-size: 1820px 363px; }
+  /* line 204, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .location h3 {
+    background: #46a7b6;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 1.08em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0em 0.72em; }
+
+/* line 212, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.requirements .block {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 2.14286em; }
+
+/* line 215, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.registration {
+  /* IE10 Consumer Preview */
+  background-image: -ms-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #616582), color-stop(1, #4B9AAC));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #616582 0%, #4B9AAC 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: linear-gradient(to right, #616582 0%, #4b9aac 100%);
+  text-align: center; }
+  /* line 229, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .registration .registration-form {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-align: left; }
+    /* line 233, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .registration .registration-form .block:first-child {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      padding-bottom: 2.85714em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    /* line 237, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .registration .registration-form .block:last-child {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-top: 1.42857em; }
+    /* line 239, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .registration .registration-form .col1, .registration .registration-form .col2 {
+      float: left;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 30.71429em;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      /* line 243, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+      .registration .registration-form .col1 .line, .registration .registration-form .col2 .line {
+        margin-top: 2px; }
+    /* line 245, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .registration .registration-form .col1 {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-right: 5.07143em;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      padding-left: 7.85714em; }
+  /* line 250, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .registration .uploader-block {
+    position: relative;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 2.85714em; }
+    /* line 253, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .registration .uploader-block i {
+      display: block;
+      position: absolute;
+      top: 0;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      left: 7.85714em;
+      color: #fff;
+      opacity: 0.5;
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      width: 22.14286em;
+      z-index: 10; }
+  /* line 264, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .registration .btn-container {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 8.85714em;
+    text-align: right; }
+
+/* line 270, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+#upload-pic {
+  display: none;
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+/* line 277, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.radiobtn-container {
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  margin-top: 3.57143em; }
+  /* line 279, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .radiobtn-container.first {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 0.14286em; }
+  /* line 280, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .radiobtn-container ul {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 0.71429em; }
+  /* line 281, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .radiobtn-container li {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 0.71429em; }
+    /* line 283, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .radiobtn-container li label {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin-left: 0.71429em; }
+  /* line 285, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .radiobtn-container p {
+    color: #fff;
+    opacity: 0.5; }
+
+/* line 291, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.jury {
+  text-align: center;
+  border-bottom: 1px solid #d8ecef; }
+
+/* line 296, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.juri-list {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 67.14286em; }
+  /* line 299, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .juri-list .item {
+    float: left;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 18.92857em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin: 4.28571em 5em 0em 0em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 12.85714em; }
+    /* line 304, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .juri-list .item:nth-child(3n) {
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      /* unwrap lists for values that have multiple list of values such as text-shadow */
+      margin: 4.64286em 0em 0em 0em; }
+    /* line 305, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .juri-list .item:first-child, .juri-list .item:nth-child(2), .juri-list .item:nth-child(3) {
+      margin-top: 0; }
+  /* line 308, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .juri-list .photo img {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 5.71429em;
+    height: 5.71429em; }
+
+/* line 312, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.organizers {
+  text-align: center; }
+
+/* line 314, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+.organizers-list {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  /* unwrap lists for values that have multiple list of values such as text-shadow */
+  width: 62.85714em; }
+  /* line 317, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+  .organizers-list .item {
+    float: left;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 11.78571em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-right: 5em; }
+    /* line 318, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .organizers-list .item img {
+      width: auto;
+      height: 119px; }
+    /* line 322, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
+    .organizers-list .item:last-child {
+      margin-right: 0; }
+
+@media only screen and (max-width: 1024px) {
+  /* line 2, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  body {
+    font-size: 12px; } }
+@media only screen and (max-width: 960px) {
+  /* line 8, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .wrap {
+    width: 100%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0em 0.71429em;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 13, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  footer.main-footer {
+    height: auto;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-bottom: 2.14286em; }
+    /* line 16, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    footer.main-footer .footer-menu ul {
+      display: none; }
+
+  /* line 18, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .footer-logo {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    width: 100%; }
+
+  /* line 25, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .footer-menu, .contacts-block {
+    float: none;
+    text-align: center; }
+
+  /* line 26, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .footer-menu {
+    height: auto; }
+
+  /* line 27, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .webmil {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    position: static; }
+
+  /* line 31, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .slide h2, .slide h3 {
+    position: static;
+    text-align: left;
+    margin-left: 4%;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-bottom: 1.42857em; }
+
+  /* line 38, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing .timing-list .first .ico:before {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    height: 7.85714em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    top: -7.85714em; }
+
+  /* line 42, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .location h3 {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 4.28571em; }
+
+  /* line 44, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .info {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 17.85714em; }
+
+  /* line 45, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .task .col1, .requirements .col1 {
+    padding-left: 4%; }
+
+  /* line 46, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .registration .registration-form .col1 {
+    padding-left: 0;
+    margin-right: 0; }
+
+  /* line 47, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .registration .registration-form .col1, .registration .registration-form .col2 {
+    float: none; }
+
+  /* line 48, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  input[type='text'], input[type='tel'], input[type='email'] {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    width: 30.71429em; }
+
+  /* line 49, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .registration .btn-container {
+    text-align: center;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 2.85714em; } }
+@media only screen and (max-width: 820px) {
+  /* line 53, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .main-menu {
+    display: none; }
+
+  /* line 54, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .juri-list, .organizers-list {
+    width: 100%; }
+
+  /* line 58, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  #slide7 h2 {
+    margin-bottom: 0; }
+
+  /* line 60, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .juri-list .item {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-right: 0; }
+
+  /* line 66, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .juri-list .item:first-child, .juri-list .item:nth-child(2), .juri-list .item:nth-child(3) {
+    margin-top: 4.28571em; }
+
+  /* line 67, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .organizers-list .item {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 4.28571em; }
+    /* line 72, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    .organizers-list .item:first-child {
+      margin-top: 0; }
+
+  /* line 74, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .task .col1, .task .col2, .requirements .col1, .requirements .col2 {
+    float: none;
+    width: 100%;
+    padding-left: 4%;
+    margin-right: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 81, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .info {
+    width: 96%; }
+
+  /* line 82, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal h2 {
+    margin-left: 0; }
+
+  /* line 83, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .text-block .stn-btn {
+    position: relative;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    top: 2.85714em; }
+
+  /* line 87, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .download {
+    position: relative;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 4.28571em;
+    top: 0;
+    text-align: center; }
+    /* line 92, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    .goal .download a {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      position: relative; } }
+@media only screen and (max-width: 600px) {
+  /* line 100, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .image-block {
+    width: 311px;
+    height: 311px;
+    background: url("../images/slide1-320.jpg") no-repeat center center;
+    margin-top: 1em; } }
+@media only screen and (max-width: 639px) {
+  /* line 109, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  header.main-header {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding-top: 1.42857em; }
+
+  /* line 110, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .wrap {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    padding: 0em 0.35714em; }
+
+  /* line 111, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing .timing-list .ico {
+    display: none; }
+
+  /* line 112, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  input[type="text"], input[type='tel'], input[type='email'], textarea {
+    width: 100% !important; }
+
+  /* line 113, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .goal .image-block img {
+    width: 100%;
+    height: auto; }
+
+  /* line 114, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  header.main-header .logo-text {
+    margin-top: 5px; }
+    /* line 116, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    header.main-header .logo-text p {
+      font-size: 1em;
+      padding: 0 1em; }
+
+  /* line 121, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing .timing-list {
+    text-align: center; }
+    /* line 123, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    .timing .timing-list .item-name {
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      width: auto; }
+
+  /* line 125, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing .timing-list .item-name, .timing .timing-list .ico, .timing .timing-list .date {
+    float: none; }
+
+  /* line 126, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .registration .registration-form .col1, .registration .registration-form .col2 {
+    width: 100%;
+    padding: 0 5px; }
+
+  /* line 127, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .registration .uploader-block i {
+    font-size: 0.71429em;
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    left: 10em; }
+
+  /* line 128, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  header.main-header .logo-text {
+    width: 100%; }
+
+  /* line 129, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing .timing-list .item-name {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    line-height: 1.16667em; }
+
+  /* line 130, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .timing-list li {
+    /* unwrap lists for values that have multiple list of values such as text-shadow */
+    margin-top: 2.08333em; }
+    /* line 132, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+    .timing-list li:first-child {
+      margin-top: 0; }
+
+  /* line 134, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .location {
+    background: url("../images/location-640.jpg") center center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; } }
+@media only screen and (max-width: 320px) {
+  /* line 141, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
+  .location {
+    background: url("../images/location-320.jpg") center center no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover; } }
