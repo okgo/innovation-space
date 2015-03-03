@@ -11763,4 +11763,22 @@ else if($this.attr('type')=='radio'){$this.addClass(defaultOpt.hideCls).wrap(wra
     return $("input[type='radio']").ezMark();
   });
 
+    $('form.registration-form').on('submit', function(e) {
+      var action, data, form, xhr;
+      e.preventDefault();
+      form = $(e.currentTarget);
+      data = form.serialize();
+      action = form.prop('action');
+      xhr = $.post(action, data);
+      return xhr.always(function() {
+        return showSuccessStep();
+      });
+    });
+
+    var showSuccessStep = function() {
+      $('.registration .done').removeClass('hide');
+      $('.registration form').addClass('hide');
+      $(document).scrollTop( $("#slide6").offset().top );
+    }
+
 }).call(this);

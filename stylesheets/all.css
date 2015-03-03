@@ -654,17 +654,18 @@ a {
       transition-duration: 0.5s; }
 
 /* line 173, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-.form-ok input[type='text'], .form-ok input[type='tel'], .form-ok input[type='email'], .form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'] {
+.form-ok input[type='text'], .form-ok input[type='tel'], .form-ok input[type='email'], .form-ok input[type='url'],
+.form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'], .form-error input[type='url'] {
   background-image: url("../images/form-validation-ico.png");
   background-position: right 20px top;
   background-repeat: no-repeat; }
 
 /* line 181, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-.form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'] {
+.form-error input[type='text'], .form-error input[type='tel'], .form-error input[type='email'], .form-error input[type='url'] {
   background-position: right 20px top -46px; }
 
 /* line 184, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-input[type='text'], input[type='tel'], input[type='email'] {
+input[type='text'], input[type='tel'], input[type='email'], input[type='url'] {
   position: relative;
   /* unwrap lists for values that have multiple list of values such as text-shadow */
   width: 25em;
@@ -689,16 +690,18 @@ input[type='text'], input[type='tel'], input[type='email'] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   /* line 197, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-  input[type='text']:focus, input[type='tel']:focus, input[type='email']:focus {
+  input[type='text']:focus, input[type='tel']:focus, input[type='email']:focus, input[type='url']:focus {
     background-color: rgba(0, 0, 0, 0.4); }
   /* line 198, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-  input[type='text'].phone, input[type='tel'].phone, input[type='email'].phone {
+  input[type='text'].phone, input[type='tel'].phone, input[type='email'].phone, input[type='url'].phone {
     /* unwrap lists for values that have multiple list of values such as text-shadow */
     width: 14.28571em; }
   /* line 199, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
-  input[type='text'].long, input[type='tel'].long, input[type='email'].long {
+  input[type='text'].long, input[type='tel'].long, input[type='email'].long, input[type='url'].long {
     /* unwrap lists for values that have multiple list of values such as text-shadow */
     width: 30.71429em; }
+  input.addition-link {float: right; width: 23em; position: absolute;}
+
 
 /* line 202, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
 textarea {
@@ -1476,12 +1479,12 @@ header.main-header {
   .registration .uploader-block {
     position: relative;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    margin-top: 2.85714em; }
+    margin-top: 2.85714em; height: 6em;}
     /* line 253, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
     .registration .uploader-block i {
       display: block;
       position: absolute;
-      top: 0;
+      /*top: 0;*/
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       left: 7.85714em;
       color: #fff;
@@ -1494,6 +1497,15 @@ header.main-header {
     /* unwrap lists for values that have multiple list of values such as text-shadow */
     margin-top: 8.85714em;
     text-align: right; }
+  .registration .done {
+    margin: 4em auto;
+    position: static;
+  }
+
+.hide {
+  display: none !important;
+  opacity: 0;
+}
 
 /* line 270, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
 #upload-pic {
@@ -1833,7 +1845,7 @@ header.main-header {
   .registration .uploader-block i {
     font-size: 0.71429em;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    left: 10em; }
+    left: 11em; }
 
   /* line 128, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
   header.main-header .logo-text {
