@@ -55,7 +55,7 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
             </div>
             <a class='stn-btn with-ico' href='#slide6'>взяти участь</a>
             <div class='download'>
-              <a href='#'>технічне завдання</a>
+              <a href='files/Конкурсне завдання.pdf' target="_blank">технічне завдання</a>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
               <p>Планшети формату А0, не більше 2-ох (pdf, 300 dpi)</p>
               <p>
                 Зразок поданий в
-                <a href='#'>додатку 1</a>
+                <a href='files/додаток 1.pdf' target="_blank">додатку 1</a>
               </p>
               <p class='block'>
                 <b>Вітається</b>
@@ -164,38 +164,42 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
         </div>
         <div class='slide registration' id='slide6'>
           <h3>реєстрація</h3>
-          <form action='/' class='registration-form'>
+
+          <h3 class="done hide">Дякуємо за реєстрацію!</h3>
+
+          <form action='https://docs.google.com/forms/d/1VMdHiLl-0hDgXdzNLFLda2GjH8GJQqmlObGMjAR-Dic/formResponse' class='registration-form'>
             <div class='block clearfix'>
               <div class='col1'>
                 <h5>Особисті дані</h5>
                 <div class='line'>
-                  <input placeholder='ПІБ' type='text'>
+                  <input placeholder='ПІБ' type='text' name="entry.1343125145">
                 </div>
                 <div class='line'>
-                  <input placeholder='E-mail' type='email'>
+                  <input placeholder='E-mail' type='email' name="entry.1170399169">
                 </div>
                 <div class='line'>
-                  <input class='phone' placeholder='Телефон' type='tel'>
+                  <input class='phone' placeholder='Телефон' type='tel' name="entry.1267147455">
                 </div>
               </div>
               <div class='col2'>
                 <h5>Дані організації</h5>
                 <div class='line'>
-                  <input class='long' placeholder='Назва компанії / організації / авторського колективу' type='text'>
+                  <input class='long' placeholder='Назва компанії / організації / авторського колективу' type='text' name="entry.795769536">
                 </div>
                 <div class='line'>
-                  <textarea class='address' placeholder='Адреса'></textarea>
+                  <textarea class='address' placeholder='Адреса' name="entry.2065401613"></textarea>
                 </div>
                 <div class='line'>
-                  <input class='phone' placeholder='Телефон' type='tel'>
+                  <input class='phone' placeholder='Телефон' type='tel' name="entry.114596824">
                 </div>
                 <div class='line'>
                   <div class='uploader-block'>
-                    <i>Компаніям та організаціям потрібно додати копію виписки з Єдиного державного реєстру</i>
                     <div class='uploader'>
-                      <label class='uploader-label' for='upload-pic'>Завантажити зображення</label>
-                      <input id='upload-pic' name='pic' type='file'>
+                      <label class='uploader-label'></label>
+                      <!--<input id='upload-pic' name='pic' type='file'>-->
+                      <input class='addition-link' placeholder='Посилання на документи' type='url' name="entry.2138669861">
                     </div>
+                    <i>Компаніям та організаціям потрібно додати копію виписки з Єдиного державного реєстру</i>
                   </div>
                 </div>
               </div>
@@ -209,15 +213,15 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
                   </p>
                   <ul class='answers-list'>
                     <li>
-                      <input id='q1-answer1' name='q1' type='radio' value='q1-answer1'>
+                      <input id='q1-answer1' name='entry.842587132' type='radio' value='Так, не одноразово'>
                       <label for='q1-answer1'>Так, не одноразово</label>
                     </li>
                     <li>
-                      <input id='q1-answer2' name='q1' type='radio' value='q1-answer2'>
+                      <input id='q1-answer2' name='entry.842587132' type='radio' value='Так, але не часто'>
                       <label for='q1-answer2'>Так, але не часто</label>
                     </li>
                     <li>
-                      <input id='q1-answer3' name='q1' type='radio' value='q1-answer3'>
+                      <input id='q1-answer3' name='entry.842587132' type='radio' value='Ні, беру участь вперше'>
                       <label for='q1-answer3'>Ні, беру участь вперше</label>
                     </li>
                   </ul>
@@ -228,15 +232,15 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
                   </p>
                   <ul class='answers-list'>
                     <li>
-                      <input id='q2-answer1' name='q2' type='radio' value='q2-answer1'>
+                      <input id='q2-answer1' name='entry.2090806647' type='radio' value='З розповіді знайомих або друзів'>
                       <label for='q2-answer1'>З розповіді знайомих або друзів</label>
                     </li>
                     <li>
-                      <input id='q2-answer2' name='q2' type='radio' value='q2-answer2'>
+                      <input id='q2-answer2' name='entry.2090806647' type='radio' value='З соцмереж'>
                       <label for='q2-answer2'>З соцмереж</label>
                     </li>
                     <li>
-                      <input id='q1-answer3' name='q2' placeholder='Власний варіант' type='text'>
+                      <input id='q2-answer3' name='entry.2090806647' placeholder='Власний варіант' type='text'>
                     </li>
                   </ul>
                 </div>
@@ -244,7 +248,7 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
               <div class='col2'>
                 <h5>Ваші очікування від Нашого конкурсу ?</h5>
                 <div class='line'>
-                  <textarea placeholder='Коментар'></textarea>
+                  <textarea placeholder='Коментар' name="entry.356725336"></textarea>
                 </div>
                 <div class='btn-container'>
                   <button class='stn-btn send-request'>надіслати заявку</button>
@@ -259,69 +263,93 @@ ul li{list-style:none}body{font-family:"Open Sans",sans-serif;font-size:14px;let
             <ul class='clearfix'>
               <li class='item'>
                 <div class='photo'>
-                  <img alt='#' src='images/j-1.png'>
+                  <img alt='#' src='images/antonyk.png'>
                 </div>
-                <h4>Віктор Загреба</h4>
-                <p>ідеолог “Теплого вело руху”</p>
-                <p>громадський діяч</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
+                <h4>Антонюк Дмитро Іванович</h4>
+                <p>Професор кафедри архітектурного проектування національної академії образотворчого мистецтва та архітектури</p>
+                <p>Віце-президент національної спілки архітекторів України.</p>
               </li>
               <li class='item'>
                 <div class='photo'>
-                  <img alt='#' src='images/j-2.png'>
+                  <img alt='#' src='images/zinchuk.png'>
                 </div>
-                <h4>Тарас Виноградник</h4>
-                <p>керуючий компанією-девелопером</p>
-                <p>громадський діяч</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
+                <h4>Наталя Зінчук</h4>
+                <p>головний архітектор проектів ZELEMIN-ART,</p>
+                <p>керівник архітектурної групи.</p>
               </li>
               <li class='item'>
                 <div class='photo'>
-                  <img alt='#' src='images/j-3.png'>
+                  <img alt='#' src='images/fakas.png'>
                 </div>
-                <h4>Оксана Купець</h4>
-                <p>архітектор, проектант</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
+                <h4>Факас Ігор Мирославович</h4>
+                <p>Член національної спілки <br> архітекторів України.</p>
+                <p>Керівник архітектурного департаменту компанії <br> «Боржава Резорт».</p>
               </li>
-              <li class='item'>
-                <div class='photo'>
-                  <img alt='#' src='images/j-4.png'>
-                </div>
-                <h4>Лариса Поліщук</h4>
-                <p>архітектор</p>
-                <p>кандидат наук</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
-              </li>
-              <li class='item'>
-                <div class='photo'>
-                  <img alt='#' src='images/j-5.png'>
-                </div>
-                <h4>Заха Хадід</h4>
-                <p>архітектор, урбаніст</p>
-                <p>громадський діяч</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
-              </li>
-              <li class='item'>
-                <div class='photo'>
-                  <img alt='#' src='images/j-6.png'>
-                </div>
-                <h4>Микита Грач</h4>
-                <p>дизайнер</p>
-                <p>громадський діяч</p>
-                <p>
-                  <a href='#'>on facebook</a>
-                </p>
-              </li>
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-1.png'>-->
+                <!--</div>-->
+                <!--<h4>Віктор Загреба</h4>-->
+                <!--<p>ідеолог “Теплого вело руху”</p>-->
+                <!--<p>громадський діяч</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-2.png'>-->
+                <!--</div>-->
+                <!--<h4>Тарас Виноградник</h4>-->
+                <!--<p>керуючий компанією-девелопером</p>-->
+                <!--<p>громадський діяч</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-3.png'>-->
+                <!--</div>-->
+                <!--<h4>Оксана Купець</h4>-->
+                <!--<p>архітектор, проектант</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-4.png'>-->
+                <!--</div>-->
+                <!--<h4>Лариса Поліщук</h4>-->
+                <!--<p>архітектор</p>-->
+                <!--<p>кандидат наук</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-5.png'>-->
+                <!--</div>-->
+                <!--<h4>Заха Хадід</h4>-->
+                <!--<p>архітектор, урбаніст</p>-->
+                <!--<p>громадський діяч</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
+              <!--<li class='item'>-->
+                <!--<div class='photo'>-->
+                  <!--<img alt='#' src='images/j-6.png'>-->
+                <!--</div>-->
+                <!--<h4>Микита Грач</h4>-->
+                <!--<p>дизайнер</p>-->
+                <!--<p>громадський діяч</p>-->
+                <!--<p>-->
+                  <!--<a href='#'>on facebook</a>-->
+                <!--</p>-->
+              <!--</li>-->
             </ul>
           </div>
         </div>
