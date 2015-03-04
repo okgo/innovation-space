@@ -588,7 +588,7 @@ a {
     .stn-btn:hover.with-ico:before {
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      background-position: 0em -1.85714em; }
+      background-position: 0 -26px; }
     /* line 128, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_ui.scss */
     .stn-btn:hover.send-request {
       background: rgba(226, 9, 50, 0.7); }
@@ -606,15 +606,15 @@ a {
       content: "";
       display: block;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      width: 2.5em;
+      width: 35px;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      height: 1.85714em;
+      height: 26px;
       position: absolute;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      left: 2.5em;
+      left: 35px;
       top: 50%;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      margin-top: -1.21429em;
+      margin-top: -17px;
       background: url("../images/btn-ico.png") no-repeat;
       -moz-background-size: cover;
       -o-background-size: cover;
