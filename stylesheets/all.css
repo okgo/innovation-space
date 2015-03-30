@@ -1191,7 +1191,7 @@ header.main-header {
     position: absolute;
     right: 0;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    top: 4.85714em; }
+    top: 1.85714em; }
     /* line 46, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
     .goal .download a {
       color: #e20932;
@@ -1205,10 +1205,11 @@ header.main-header {
       /* line 54, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
       .goal .download a:before {
         content: '';
-        position: absolute;
+        position: relative;
         left: 0;
         top: 0;
-        display: block;
+        display: inline-block;
+        margin-right: 1em;
         /* unwrap lists for values that have multiple list of values such as text-shadow */
         width: 1.78571em;
         /* unwrap lists for values that have multiple list of values such as text-shadow */
