@@ -1193,7 +1193,10 @@ header.main-header {
     /* unwrap lists for values that have multiple list of values such as text-shadow */
     top: 1.85714em; }
     /* line 46, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
-    .goal .download a {
+    .task .download {
+        padding: 1em 0;
+    }
+    .goal .download a, .task .download a {
       color: #e20932;
       text-transform: uppercase;
       line-height: 1.57143em;
@@ -1202,8 +1205,11 @@ header.main-header {
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       padding-left: 2.5em;
       text-decoration: none; }
+      .task .download a {
+          padding-left: 0;
+      }
       /* line 54, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
-      .goal .download a:before {
+      .goal .download a:before, .task .download a:before {
         content: '';
         position: relative;
         left: 0;
