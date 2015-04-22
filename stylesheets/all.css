@@ -1578,7 +1578,11 @@ header.main-header {
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      margin: 4.64286em 0em 0em 0em; }
+      margin: 4.64286em 0em 0em 0em;
+    }
+    .juri-list .item:nth-child(4) {
+      margin: 5em 0 0 24em;
+    }
     /* line 305, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
     .juri-list .item:first-child, .juri-list .item:nth-child(2), .juri-list .item:nth-child(3) {
       margin-top: 0; }
@@ -1735,8 +1739,10 @@ header.main-header {
     margin-right: 0; }
 
   /* line 66, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
-  .juri-list .item:first-child, .juri-list .item:nth-child(2), .juri-list .item:nth-child(3) {
-    margin-top: 4.28571em; }
+  .juri-list .item:first-child, .juri-list .item:nth-child(2), .juri-list .item:nth-child(3), .juri-list .item:nth-child(4) {
+    margin-top: 4.28571em;
+    margin-left: 0;
+  }
 
   /* line 67, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
   .organizers-list .item {
