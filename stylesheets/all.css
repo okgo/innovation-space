@@ -1150,7 +1150,7 @@ header.main-header {
     *display: inline;
     text-align: center;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    margin-top: 5em;
+    margin-top: 3em;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
     width: 44.07143em;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
@@ -1183,7 +1183,7 @@ header.main-header {
       position: absolute;
       left: 50%;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
-      top: 3.57143em;
+      top: 6em;
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       margin-left: -8.21429em; }
   /* line 42, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
@@ -1205,6 +1205,9 @@ header.main-header {
       /* unwrap lists for values that have multiple list of values such as text-shadow */
       padding-left: 2.5em;
       text-decoration: none; }
+    .goal .download a {
+      line-height: 3em;
+    }
       .task .download a {
           padding-left: 0;
       }
