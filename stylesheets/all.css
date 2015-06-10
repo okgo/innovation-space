@@ -1232,6 +1232,17 @@ header.main-header {
       .goal .download a:hover {
         text-decoration: underline; }
 
+
+.results {
+  text-align:left !important;
+  color:#fff;
+  font-size:16px;
+  padding:15px;
+  margin:10px 0 50px 0;
+}
+.results ul {
+  margin:3em 0 0 3em;
+}
 /* line 70, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
 .timing {
   text-align: center;
