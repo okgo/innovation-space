@@ -1140,26 +1140,36 @@ header.main-header {
   /* unwrap lists for values that have multiple list of values such as text-shadow */
   /* unwrap lists for values that have multiple list of values such as text-shadow */
   padding: 0em 0em 3.57143em 0em;
-  text-align: center; }
+  text-align: center;
+  }
   /* line 13, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
   .goal .image-block {
+    color: #a6a6a6;
     display: inline-block;
     vertical-align: middle;
     *vertical-align: auto;
     *zoom: 1;
     *display: inline;
-    text-align: center;
+    text-align: left;
+    padding-left: 23em;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    margin-top: 3em;
+    margin: 5em 0;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    width: 44.07143em;
+    width: 48em;
     /* unwrap lists for values that have multiple list of values such as text-shadow */
-    height: 36.78571em;
-    background: url("../images/slide1-768.jpg") center center no-repeat;
+    height: 20em;
+    background: url("../images/slide1-768.jpg") left center no-repeat;
     -moz-background-size: contain;
     -o-background-size: contain;
     -webkit-background-size: contain;
     background-size: contain; }
+
+  .goal .image-block h2 {
+    font-size: 1.4em;
+  }
+  .goal .image-block p {
+    margin-bottom: 1em;
+  }
   /* line 22, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_index.scss */
   .goal h2 {
     position: static; }
@@ -1811,9 +1821,11 @@ header.main-header {
 @media only screen and (max-width: 600px) {
   /* line 100, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
   .goal .image-block {
-    width: 311px;
+    /*width: 311px;*/
+    width: 80%;
     height: 311px;
-    background: url("../images/slide1-320.jpg") no-repeat center center;
+    background: url("../images/slide1-320.jpg") no-repeat center top;
+    padding: 27em 0 0 0;
     margin-top: 1em; } }
 @media only screen and (max-width: 639px) {
   /* line 109, /Users/admin/Works/space-innovations/pages/source/stylesheets/partials/_mobile.scss */
